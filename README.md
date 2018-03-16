@@ -3,7 +3,7 @@ A friend finder app that incorporates the use of Node and Express.
 
 GETTING STARTED:
 
-https://secret-island-51876.herokuapp.com/
+https://morning-bayou-47980.herokuapp.com/
 
 SCREEN SHOTS:
 
