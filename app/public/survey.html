@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Reservation Page</title>
+    
+	<!-- Latest compiled and minified CSS Bootstrap link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+      <!--JQuery-->
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+     <!-- Latest compiled and minified JavaScript for Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome Glyphicons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <!--Chosen (a Javascript plugin that makes select boxes user-friendly) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Survey Questions</h2>
+        <hr>
+        <h3>
+            <strong>About You</strong>
+        </h3>
+        <h4>Name (Required)</h4>
+        <input type="text" id="name" class="form-control" required>
+        <h4>Link to Photo Image (Required)</h4>
+        <input type="text" id="photo" class="form-control" required>
+        <hr>
+        <h3>
+            <strong> Question 1</strong>
+        </h3>
+        <h4> How much do you LOVE coffee?</h4>
+        <select class="chosen-select" id="q1" style="display: none;">
+            <option value></option>
+            <option value="1"> 1 (love, love, love, LOVE coffee!)</option>
+            <option value="2"> 2 (Coffee comes second to my number one love in life: PIZZA!)</option>
+            <option value="3"> 3 (I drink coffee at least twice a day)</option>
+            <option value="4"> 4 (I drink coffee at least once a day)</option>
+            <option value="5"> 5 (Eh... coffee. Who needs it.)</option>
+        </select>
+
+        
+        <h3>
+            <strong> Question 2</strong>
+        </h3>
+        <h4>Are you more of a cat person or a dog person?</h4>
+        <select class="chosen-select" id="q2" style="display:none;">
+            <option value></option>
+            <option value ="1"> 1 (I am for sure a cat person. Hate dogs. Can't stand them.)</option>
+            <option value ="2">2 (I am a cat person, but dogs are okay.</option>
+            <option value = "3"> 3 (Neutral. I have neither a dog or a cat. But I'm okay with them.)</option>
+            <option value ="4">4 (I am a dog person, but cats are okay.</option>
+            <option value = "5"> 5 (I am for sure a dog person. Hate cats. Can't stand them.)</option>
+        </select>
+       
+            <strong> Question 3</strong>
+        </h3>
+        <h4>On a scale of 1 to 5 how weird are you?</h4>
+        <select class="chosen-select" id="q3" style="display:none;">
+           <option value></option>
+           <option value="1"> 1 (I'm bonkers. But all the good people are. So it's cool.)</option>
+           <option value="2">2 (I'm weird, and I don't care.)</option>
+           <option value="3">3 (I'm weird, but I like to pretend I'm not)</option>
+           <option value="4">4 (I'm totally normal).</option>
+           <option value="5">5 (I'm as boringly normal as they come) </option>
+        </select>
+       
+            <h3>
+                <strong> Question 4</strong>
+            </h3>
+            <h4> Are you a food person?</h4>
+            <select class="chosen-select" id="q4" style="display:none;">
+                <option value></option>
+                <option value="1">1 (I LOVE food.)</option>
+                <option value="2">2 (I like food.)</option>
+                <option value="3">3 (I don't know. I just eat when I'm hungry.)</option>
+                <option value="4">4 (Food is food.)</option>
+                <option value="5">5 (I feel fat when I eat.)</option>
+            </select>
+          
+                <h3>
+                    <strong> Question 5</strong>
+                </h3>
+                <h4> Do you exercise?</h4>
+                <select class="chosen-select" id="q5" style="display:none;">
+                        <option value></option>
+                        <option value="1">1 (Yes.)</option>
+                        <option value="2">2 (Every other day.)</option>
+                        <option value="3">3 (Sometimes.)</option>
+                        <option value="4">4 (When I feel like it.)</option>
+                        <option value="5">5 (I exercise my brain on the couch.)</option>
+                    </select>
+                   
+                    <h3>
+                        <strong> Question 6</strong>
+                    </h3>
+                    <h4> Do you like people?</h4>
+                    <select class="chosen-select" id="q6" style="display:none;">
+                         <option value></option>
+                         <option value="1">1 (OH yes. Have to be around people 24/7.)</option>
+                         <option value="2">2 (Yes.)</option>
+                         <option value="3">3 (I tolerate people)</option>
+                         <option value="4">4 (No.)</option>
+                         <option value="5">5 (I'd rather go live in a cave somewhere, alone.)</option>
+                    </select>
+                  
+                     <h3>
+                         <strong> Question 7</strong>
+                     </h3>
+                     <h4> Do you already have friends?</h4>
+                     <select class="chosen-select" id="q7" style="display:none;">
+                            <option value></option>
+                            <option value="1">1 (No. Of course not. That's why I'm on here.)</option>
+                            <option value="2">2 (1 or 2.)</option>
+                            <option value="3">3 (Sort of?)</option>
+                            <option value="4">4 (Yes...?)</option>
+                            <option value="5">5 (Yes. Lots of friends.)</option>
+                        </select>
+                       
+                             <h3>
+                                <strong> Question 8</strong>
+                             </h3>
+                             <h4> Would you rather live on a beach or in the mountains?</h4>
+                             <select class="chosen-select" id="q8" style="display:none;">
+                                    <option value></option>
+                                    <option value="1">1 (The beach.)</option>
+                                    <option value="2">2 (I don't know)</option>
+                                    <option value="3">3 (I really have no idea)</option>
+                                    <option value="4">4 (UH.....)</option>
+                                    <option value="5">5 (The mountains.)</option>
+                            </select>
+                           
+                             <h3>
+                                <strong> Question 9</strong>
+                             </h3>
+                            <h4> How do you prefer your sandwich?</h4>
+                            <select class="chosen-select" id="q9" style="display:none;">
+                                <option value></option>
+                                <option value="1">1 (With bacon.)</option>
+                                <option value="2">2 (sunny-side up.)</option>
+                                <option value="3">3 (However it comes. I'm hungry.)</option>
+                                <option value="4">4 (with lots and lots of cheese)</option>
+                                <option value="5">5 (No veggies.All the meat.)</option>
+                            </select>
+                           
+                             <h3>
+                                 <strong> Question 10</strong>
+                             </h3>
+                             <h4> Do you like waking up?</h4>
+                             <select class="chosen-select" id="q10" style="display:none;">
+                                    <option value></option>
+                                    <option value="1">1 (NO.)</option>
+                                    <option value="2">2 (I like waking up, turning off my alarm, and going back to sleep)</option>
+                                    <option value="3">3 (Please don't make me.)</option>
+                                    <option value="4">4 (Yes. The sun, and the birds chirping, and the smell of coffee are the best.)</option>
+                                    <option value="5">5 (Oh yes. It's the best part of the day.)</option>
+                              </select>
+
+                                   <br>
+                                   <br>
+                             <!-- Submit Button -->
+
+                             <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+                                <i class="fa fa-check-circle" aria-hidden="true"></i> Submit
+                             </button>
+                             <hr>
+                             <footer class ="footer">
+                                    <div class="container">
+                                        <p>
+                                            <a href="/api/friends">API Friends List</a>
+                                             | 
+                                            <a href="https://github.com/Atilla20/friendFinder" target="_blank">Github Repo</a>
+                                        </p>
+                                    </div>
+                                </footer>
+
+                             <!--Modal Structure -->
+
+                             <div id="results-modal" class="modal fade" role="dialog">
+                                 <div class="modal-dialog">
+                                     <!--Modal content -->
+                                     <div class="modal-content">
+                                         <div class="modal-header">
+                                             <button type="button" class="close" data-dismiss="modal">x</button>
+                                             <h2 class="modal-title">
+                                                 <strong> Best Match</strong>
+                                             </h2>
+                                         </div>
+                                         <div class="modal-body">
+                                             <h2 id="match-name"></h2>
+                                             <img id="matchPic" src="" alt="Here's where your new BFF's image goes" width= 250px>
+                                         </div>
+                                         <div class="modal-footer">
+                                             <button type="button" class="btn btn-default" data-dismiss="modal"> Clear</button>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+
+    <script type="text/javascript">
+
+    // Chosen JQuery Plugin CSs
+
+   $(".chosen-select").chosen({
+       disable_search_threshold: 10,
+       no_results_text: "Nothing found.",
+       width:"95%"
+   });
+
+  $(document).ready(function() {
+      $("#submit").on("click", function() {
+          //form validation
+        function validateForm() {
+            var isValid = true;
+            $('.validate').each(function() {
+                if($(this).val() === '') {
+                    isValid = false;
+                }
+            });
+            
+            return isValid;
+        }
+
+        //if it's all filled
+
+        if (validateForm() == true) {
+            //creates a new friend from submitted info
+
+            var newFriend = {
+                name: $('#name').val().trim(),
+                picture: $('#photo').val().trim(),
+                scores: [
+                    $('#q1').val(),
+                    $('#q2').val(),
+                    $('#q3').val(),
+                    $('#q4').val(),
+                    $('#q5').val(),
+                    $('#q6').val(),
+                    $('#q7').val(),
+                    $('#q8').val(),
+                    $('#q9').val(),
+                    $('#q10').val()
+                ]
+            };
+
+            //Grabs current URL of website 
+            var currentURL = window.location.origin;
+
+            //AJAX posts the data to friends API
+            $.post(currentURL + "/api/friends", newFriend, function(data) {
+
+                $("#matchName").text(data.name);
+                $("#matchPhoto").attr("src", data.photo);
+            });
+
+            $('#results-modal').modal();
+
+        } else {
+
+            alert("Please fill out ALL fields before submitting survey!")
+        }
+
+         //clear form
+
+            $('#name').val("");
+            $('#photo').val("");
+            $('#q1').val("");
+            $('#q2').val("");
+            $('#q3').val("");
+            $('#q4').val("");
+            $('#q5').val("");
+            $('#q6').val("");
+            $('#q7').val("");
+            $('#q8').val("");
+            $('#q9').val("");
+            $('#q10').val("");
+        // return false;
+    });
+});
+</script>
+</body>
+</html>
